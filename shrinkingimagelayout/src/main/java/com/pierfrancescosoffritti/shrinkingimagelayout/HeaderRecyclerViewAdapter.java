@@ -21,7 +21,7 @@ public abstract class HeaderRecyclerViewAdapter<VH extends RecyclerView.ViewHold
         if(position == 0)
             return HEADER;
 
-        return getItemViewType_(position);
+        return getItemViewType_(position-1);
     }
 
     @Override
@@ -40,7 +40,7 @@ public abstract class HeaderRecyclerViewAdapter<VH extends RecyclerView.ViewHold
         if(viewHolder instanceof HeaderViewHolder)
             return;
 
-        onBindViewHolder_((VH) viewHolder, position);
+        onBindViewHolder_((VH) viewHolder, position-1);
     }
 
     /**
