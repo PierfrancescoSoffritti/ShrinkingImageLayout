@@ -33,7 +33,7 @@ public class StringAdapter extends HeaderRecyclerViewAdapter<StringAdapter.Strin
     }
 
     @Override
-    public int getItemCount() {
+    public int getItemCount_() {
         return data.size();
     }
 

@@ -43,6 +43,11 @@ public abstract class HeaderRecyclerViewAdapter<VH extends RecyclerView.ViewHold
         onBindViewHolder_((VH) viewHolder, position-1);
     }
 
+    @Override
+    public int getItemCount() {
+        return getItemCount_()+1;
+    }
+
     /**
      * use this method instead of {@link android.support.v7.widget.RecyclerView.Adapter#getItemViewType(int)}
      */
@@ -52,6 +57,7 @@ public abstract class HeaderRecyclerViewAdapter<VH extends RecyclerView.ViewHold
 
     public abstract VH onCreateViewHolder_(ViewGroup parent, int viewType);
     public abstract void onBindViewHolder_(VH viewHolder, int position);
+    protected abstract int getItemCount_();
 
     static class HeaderViewHolder extends RecyclerView.ViewHolder {
         public HeaderViewHolder(View itemView) {
