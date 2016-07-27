@@ -10,7 +10,7 @@ import android.os.Build;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.View;
@@ -25,7 +25,7 @@ public class ShrinkingImageLayout extends FrameLayout {
 
     private ParallaxScrimageView parallaxScrimageView;
     private RecyclerView recyclerView;
-    private GridLayoutManager layoutManager;
+    private LinearLayoutManager layoutManager;
     private HeaderRecyclerViewAdapter adapter;
     private LinearLayout header;
 
@@ -119,7 +119,7 @@ public class ShrinkingImageLayout extends FrameLayout {
         this.header.addView(header, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
     }
 
-    public void setupRecyclerView(@NonNull RecyclerView recyclerView, @NonNull GridLayoutManager layoutManager, @NonNull HeaderRecyclerViewAdapter adapter) {
+    public void setupRecyclerView(@NonNull RecyclerView recyclerView, @NonNull LinearLayoutManager layoutManager, @NonNull HeaderRecyclerViewAdapter adapter) {
         this.recyclerView = recyclerView;
         this.adapter = adapter;
         this.layoutManager = layoutManager;

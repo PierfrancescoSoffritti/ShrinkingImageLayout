@@ -35,7 +35,7 @@ Add the ViewGroup to your layout file:
 ```
 Then set it up by calling this method:
 ```
-shrinkingImageLayout.setupRecyclerView(new RecyclerView(this), new GridLayoutManager(this, 1), new Adapter(getData()));
+shrinkingImageLayout.setupRecyclerView(new RecyclerView(this), new LinearLayoutManager(this), new Adapter(getData()));
 ```
 the adapter <b>must implement</b> `HeaderRecyclerViewAdapter`
 
