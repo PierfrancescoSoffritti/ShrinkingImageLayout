@@ -3,6 +3,8 @@
 
 Android layout with an header image sensible to scroll and touch events. Original code taken from [Plaid](https://github.com/nickbutcher/plaid) and made into a backward compatible layout, sensible to RecyclerView scrolls.
 
+Download the sample app [here](https://github.com/PierfrancescoSoffritti/ShrinkingImageLayout/blob/master/sample/sample-release.apk?raw=true)
+
 <img height="450" src="https://github.com/PierfrancescoSoffritti/ShrinkingImageLayout/blob/master/pics/Animation.gif" />
 
 ## Download
@@ -18,7 +20,7 @@ allprojects {
 Add this to your module-level `build.gradle`:
 ```
 dependencies {
-  compile 'com.github.PierfrancescoSoffritti:ShrinkingImageLayout:0.3'
+  compile 'com.github.PierfrancescoSoffritti:ShrinkingImageLayout:0.4'
 }
 ```
 
