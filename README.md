@@ -5,7 +5,7 @@ Android layout with an header image sensible to scroll and touch events. Origina
 
 Download the sample app [here](https://github.com/PierfrancescoSoffritti/ShrinkingImageLayout/blob/master/sample/sample-release.apk?raw=true)
 
-Apps using this library: [Shuffly](https://plus.google.com/u/0/communities/108043751914798315413)
+Apps using this library: [Shuffly](https://play.google.com/store/apps/details?id=com.pierfrancescosoffritti.shuffly)
 
 <img height="450" src="https://github.com/PierfrancescoSoffritti/ShrinkingImageLayout/blob/master/pics/Animation.gif" />
 
