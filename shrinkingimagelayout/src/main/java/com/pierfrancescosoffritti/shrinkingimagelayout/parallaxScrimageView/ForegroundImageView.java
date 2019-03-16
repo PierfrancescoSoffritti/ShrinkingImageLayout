@@ -39,7 +39,7 @@ public class ForegroundImageView extends ImageView {
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ForegroundView);
 
-        final Drawable d = a.getDrawable(R.styleable.ForegroundView_android_foreground);
+        final Drawable d = a.getDrawable(R.styleable.ForegroundView_foreground);
         if (d != null) {
             setForeground(d);
         }

@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.pierfrancescosoffritti.shrinkingimagelayout.ShrinkingImageLayout;
 
 import java.util.ArrayList;
@@ -33,10 +34,12 @@ public class MainActivity extends AppCompatActivity {
         shrinkingImageLayout.addCustomHeader(header);
         shrinkingImageLayout.setupRecyclerView(new RecyclerView(this), new LinearLayoutManager(this), new StringAdapter(getData()));
 
+        RequestOptions options = new RequestOptions().centerCrop();
+
         Glide
                 .with(this)
                 .load("http://www.notizie.it/wp-content/uploads/2016/07/android.jpg")
-                .centerCrop()
+                .apply(options)
                 .into(shrinkingImageLayout.getImageView());
     }
 
