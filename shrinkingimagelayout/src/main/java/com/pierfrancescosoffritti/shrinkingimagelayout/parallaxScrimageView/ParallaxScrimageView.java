@@ -20,9 +20,9 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.support.annotation.ColorInt;
-import android.support.annotation.FloatRange;
-import android.support.v4.view.ViewCompat;
+import androidx.annotation.ColorInt;
+import androidx.annotation.FloatRange;
+import androidx.core.view.ViewCompat;
 import android.util.AttributeSet;
 import android.util.Property;
 

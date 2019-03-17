@@ -1,8 +1,8 @@
 package com.pierfrancescosoffritti.shrinkingimagelayout;
 
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -49,7 +49,7 @@ public abstract class HeaderRecyclerViewAdapter<VH extends RecyclerView.ViewHold
     }
 
     /**
-     * use this method instead of {@link android.support.v7.widget.RecyclerView.Adapter#getItemViewType(int)}
+     * use this method instead of {@link RecyclerView.Adapter#getItemViewType(int)}
      */
     public @IntRange(from = 1, to = Long.MAX_VALUE) int getItemViewType_(int position) {
         return 1;

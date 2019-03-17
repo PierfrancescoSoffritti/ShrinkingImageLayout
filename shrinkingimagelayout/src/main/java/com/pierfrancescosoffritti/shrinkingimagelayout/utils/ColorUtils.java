@@ -16,10 +16,10 @@
 
 package com.pierfrancescosoffritti.shrinkingimagelayout.utils;
 
-import android.support.annotation.CheckResult;
-import android.support.annotation.ColorInt;
-import android.support.annotation.FloatRange;
-import android.support.annotation.IntRange;
+import androidx.annotation.CheckResult;
+import androidx.annotation.ColorInt;
+import androidx.annotation.FloatRange;
+import androidx.annotation.IntRange;
 
 /**
  * Utility methods for working with colors.
